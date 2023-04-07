@@ -3,9 +3,9 @@ package stevedore
 import munit.CatsEffectSuite
 import cats.Id
 
-class ExecutorTests extends CatsEffectSuite {
+class ServerSideExecutorTests extends CatsEffectSuite {
 
-  val executor = Executor.instance[Either[Throwable, *]]
+  val executor = ServerSideExecutor.instance[Either[Throwable, *]]
 
   test("build and run empty image") {
     val build = executor.build(Build.empty)
