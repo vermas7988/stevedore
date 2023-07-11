@@ -12,7 +12,7 @@ class ServerSideExecutorTests extends CatsEffectSuite {
     val result = build.flatMap(executor.run).map(_.getAll)
     assertEquals(
       result,
-      Right(Map.empty)
+      Right(Map.empty),
     )
   }
 }
