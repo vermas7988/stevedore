@@ -1,4 +1,4 @@
-ThisBuild / scalaVersion := "3.2.2"
+ThisBuild / scalaVersion := "3.9.0"
 ThisBuild / versionScheme := Some("early-semver")
 ThisBuild / githubWorkflowPublishTargetBranches := Seq()
 
